@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-11-24T15:07:55 IST" name="Default suite" finished-at="2026-11-24T15:08:04 IST" duration-ms="9043">
+    <groups>
+    </groups>
+    <test started-at="2026-11-24T15:07:55 IST" name="Default test" finished-at="2026-11-24T15:08:04 IST" duration-ms="9043">
+      <class name="api.test.UserTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:api.test.UserTest@2cdd0d4b]" started-at="2026-11-24T15:07:55 IST" name="setup" finished-at="2026-11-24T15:07:55 IST" duration-ms="244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="createUser()[pri:1, instance:api.test.UserTest@2cdd0d4b]" started-at="2026-11-24T15:07:55 IST" name="createUser" finished-at="2026-11-24T15:08:00 IST" duration-ms="4385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createUser -->
+        <test-method signature="getTestUser()[pri:2, instance:api.test.UserTest@2cdd0d4b]" started-at="2026-11-24T15:08:00 IST" name="getTestUser" finished-at="2026-11-24T15:08:01 IST" duration-ms="1501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTestUser -->
+        <test-method signature="updateUser()[pri:3, instance:api.test.UserTest@2cdd0d4b]" started-at="2026-11-24T15:08:01 IST" name="updateUser" finished-at="2026-11-24T15:08:03 IST" duration-ms="1413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateUser -->
+        <test-method signature="getTestUser1()[pri:4, instance:api.test.UserTest@2cdd0d4b]" started-at="2026-11-24T15:08:03 IST" name="getTestUser1" finished-at="2026-11-24T15:08:04 IST" duration-ms="1429" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTestUser1 -->
+      </class> <!-- api.test.UserTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
