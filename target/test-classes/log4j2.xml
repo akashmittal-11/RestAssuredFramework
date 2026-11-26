@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+
+    <!-- Define reusable properties -->
+    <Properties>
+        <Property name="logPath">logs</Property>
+
+        <Property name="logPattern">  %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %c{1} - %msg%n
+        </Property>
+    </Properties>
+
+    <Appenders>
+
+        <!-- Display logs in Eclipse console -->
+        <Console name="Console" target="SYSTEM_OUT">
+
+            <PatternLayout pattern="${logPattern}"/>
+
+        </Console>
+
+        <!-- Save logs into a file -->
+        <RollingFile name="FileLogger"
+                     fileName="${logPath}/automation.log"
+                     filePattern="${logPath}/automation-%d{yyyy-MM-dd}-%i.log.gz">
+
+            <PatternLayout pattern="${logPattern}"/>
+
+            <Policies>
+
+                <TimeBasedTriggeringPolicy interval="1"
+                                           modulate="true"/>
+
+                <SizeBasedTriggeringPolicy size="10 MB"/>
+
+            </Policies>
+
+            <DefaultRolloverStrategy max="10"/>
+
+        </RollingFile>
+
+    </Appenders>
+
+    <Loggers>
+
+        <!-- Application-specific logging -->
+        <Logger name="api" level="debug" additivity="false">
+
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileLogger"/>
+
+        </Logger>
+
+        <!-- Default logging configuration -->
+        <Root level="info">
+
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="FileLogger"/>
+
+        </Root>
+
+    </Loggers>
+
+</Configuration>
