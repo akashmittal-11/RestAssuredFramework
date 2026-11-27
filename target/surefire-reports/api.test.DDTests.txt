@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: api.test.DDTests
 -------------------------------------------------------------------------------
-Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.33 s -- in api.test.DDTests
+Tests run: 22, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 36.82 s -- in api.test.DDTests

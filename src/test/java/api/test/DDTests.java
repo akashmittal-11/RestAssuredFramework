@@ -10,6 +10,7 @@ import io.restassured.response.Response;
 
 public class DDTests {
 
+	public static final String path = System.getProperty("user.dir") + "/testData/UserData.xlsx";
 
     @Test(priority = 1,
           dataProvider = "Data",
@@ -36,8 +37,7 @@ public class DDTests {
         userPayload.setUserStatus(
             Integer.parseInt(userStatus));
 
-        Response response =
-            UserEndpoints.createUser(userPayload);
+        Response response = UserEndpoints.createUser(userPayload);
 
 //        response.then().log().all();
 
@@ -62,11 +62,11 @@ public class DDTests {
             response.jsonPath().getString("username"),
             username);
     }
-//
-//    @Test(priority = 3,
-//          dependsOnMethods = "testGetUser",
-//          dataProvider = "UserNames",
-//          dataProviderClass = DataProviders.class)
+
+    @Test(priority = 3,
+          dependsOnMethods = "testGetUser",
+          dataProvider = "UserNames",
+          dataProviderClass = DataProviders.class)
 
     public void testDeleteUser(String username) {
 

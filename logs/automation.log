@@ -54,3 +54,11 @@
 2026-11-26 17:22:10.990 [main] INFO  UserTest - *********** User is updated ***********
 2026-11-26 17:22:10.993 [main] INFO  UserTest - *********** Deleting User ***********
 2026-11-26 17:22:12.458 [main] INFO  UserTest - *********** User is Deleted ***********
+2026-11-26 17:29:31.623 [main] INFO  UserTest - *********** Creating User ***********
+2026-11-26 17:29:33.034 [main] INFO  UserTest - *********** User Created ***********
+2026-11-26 17:29:33.038 [main] INFO  UserTest - *********** Getting User Details ***********
+2026-11-26 17:29:34.570 [main] INFO  UserTest - *********** Fetched User ***********
+2026-11-26 17:29:34.573 [main] INFO  UserTest - *********** Updating User ***********
+2026-11-26 17:29:36.114 [main] INFO  UserTest - *********** User is updated ***********
+2026-11-26 17:29:36.119 [main] INFO  UserTest - *********** Deleting User ***********
+2026-11-26 17:29:37.567 [main] INFO  UserTest - *********** User is Deleted ***********
